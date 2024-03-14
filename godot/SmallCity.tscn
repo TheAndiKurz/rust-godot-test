@@ -19,3 +19,9 @@ angular_speed = 0.2
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
 mesh = ExtResource("1_6eqi1")
 skeleton = NodePath("../..")
+
+[node name="RichTextLabel" type="FrameRateText" parent="."]
+offset_right = 100.0
+offset_bottom = 20.0
+fit_content = true
+scroll_active = false
