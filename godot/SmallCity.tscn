@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://dc0r56mc4k11"]
+
+[ext_resource type="ArrayMesh" uid="uid://k00rlr2bcp7s" path="res://assets/small_city/small_city.obj" id="1_6eqi1"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-4.37114e-08, -0.707107, 0.707107, 0, 0.707107, 0.707107, -1, 3.09086e-08, -3.09086e-08, 10, 10, 0)
+current = true
+
+[node name="RotatingNode3D" type="RotatingNode3D" parent="."]
+angular_speed = 0.2
+
+[node name="SmallCity" type="MeshInstance3D" parent="RotatingNode3D"]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+mesh = ExtResource("1_6eqi1")
+skeleton = NodePath("../..")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, -0.5, 0.5, 5, 5, 5)
+shadow_enabled = true
