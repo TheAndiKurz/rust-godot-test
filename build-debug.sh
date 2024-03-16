@@ -8,4 +8,4 @@ cargo build --manifest-path rust/Cargo.toml
 
 
 # export the game
-godot godot/project.godot --export-debug "Linux/X11" ../target/debug/game
+godot4 godot/project.godot --export-debug "Linux/X11" ../target/debug/game
